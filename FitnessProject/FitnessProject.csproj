@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81A3B7A7-10AD-42F0-A53A-17FE6A38D09E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FitnessProject</RootNamespace>
+    <AssemblyName>FitnessProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Fitness.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.2">
+      <HintPath>..\..\..\FitnessLocal\LocalVersion\FitnessProject\bin\Debug\DevExpress.Data.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2">
+      <HintPath>..\..\..\FitnessLocal\LocalVersion\FitnessProject\bin\Debug\DevExpress.Utils.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.2">
+      <HintPath>..\..\..\FitnessLocal\LocalVersion\FitnessProject\bin\Debug\DevExpress.XtraEditors.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.2">
+      <HintPath>..\..\..\FitnessLocal\LocalVersion\FitnessProject\bin\Debug\DevExpress.XtraGrid.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.2">
+      <HintPath>..\..\..\FitnessLocal\LocalVersion\FitnessProject\bin\Debug\DevExpress.XtraLayout.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2">
+      <HintPath>..\..\..\FitnessLocal\LocalVersion\FitnessProject\bin\Debug\DevExpress.XtraScheduler.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v12.2.Core">
+      <HintPath>..\..\..\FitnessLocal\LocalVersion\FitnessProject\bin\Debug\DevExpress.XtraScheduler.v12.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpandableGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Ярослав\Downloads\treegridview\TreeGridView\bin\Debug\ExpandableGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="StaffDotNet.CollapsiblePanel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Ярослав\Downloads\StaffDotNet.CollapsiblePanel\StaffDotNet.CollapsiblePanel\StaffDotNet.CollapsiblePanel\bin\Debug\StaffDotNet.CollapsiblePanel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VideoCaptureNET, Version=1.0.1741.31821, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Культурист\Fitness\FitnessProject\FitnessProject\FitnessProject\bin\Debug\VideoCaptureNET.dll</HintPath>
+    </Reference>
+    <Reference Include="ZFort.DB, Version=2.10.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FitnessWS\Fitness\Fitness\bin\ZFort.DB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\CtrlAdditionalVisits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlAdditionalVisits.Designer.cs">
+      <DependentUpon>CtrlAdditionalVisits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlBirthdays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlBirthdays.Designer.cs">
+      <DependentUpon>CtrlBirthdays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlChart.Designer.cs">
+      <DependentUpon>CtrlChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlIncomesOutcomes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlIncomesOutcomes.Designer.cs">
+      <DependentUpon>CtrlIncomesOutcomes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlCoachesOnVisit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlCoachesOnVisit.Designer.cs">
+      <DependentUpon>CtrlCoachesOnVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlRests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlRests.Designer.cs">
+      <DependentUpon>CtrlRests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlUserIncome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlUserIncome.Designer.cs">
+      <DependentUpon>CtrlUserIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlAdministrators.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlAdministrators.Designer.cs">
+      <DependentUpon>CtrlAdministrators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlDeclines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlDeclines.Designer.cs">
+      <DependentUpon>CtrlDeclines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlGoodSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlGoodSale.Designer.cs">
+      <DependentUpon>CtrlGoodSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlMoneyMovement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlMoneyMovement.Designer.cs">
+      <DependentUpon>CtrlMoneyMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlServiceSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlServiceSale.Designer.cs">
+      <DependentUpon>CtrlServiceSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlAbonementSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlAbonementSale.Designer.cs">
+      <DependentUpon>CtrlAbonementSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlUserVisits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlUserVisits.Designer.cs">
+      <DependentUpon>CtrlUserVisits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlVisits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlVisits.Designer.cs">
+      <DependentUpon>CtrlVisits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlExitInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlExitInfo.Designer.cs">
+      <DependentUpon>CtrlExitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlClientsOnline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlClientsOnline.Designer.cs">
+      <DependentUpon>CtrlClientsOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlCoaches.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlCoaches.Designer.cs">
+      <DependentUpon>CtrlCoaches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlArrivals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlArrivals.Designer.cs">
+      <DependentUpon>CtrlArrivals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlBoxType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlBoxType.Designer.cs">
+      <DependentUpon>CtrlBoxType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlCharges.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlCharges.Designer.cs">
+      <DependentUpon>CtrlCharges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlDocumentType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlDocumentType.Designer.cs">
+      <DependentUpon>CtrlDocumentType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlAbonements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlAbonements.Designer.cs">
+      <DependentUpon>CtrlAbonements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlBarcodes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlBarcodes.Designer.cs">
+      <DependentUpon>CtrlBarcodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlBoxes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlBoxes.Designer.cs">
+      <DependentUpon>CtrlBoxes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlClient.Designer.cs">
+      <DependentUpon>CtrlClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlDimension.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlDimension.Designer.cs">
+      <DependentUpon>CtrlDimension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlGoods.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlGoods.Designer.cs">
+      <DependentUpon>CtrlGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlInfo.Designer.cs">
+      <DependentUpon>CtrlInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlSales.Designer.cs">
+      <DependentUpon>CtrlSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlSuppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlSuppliers.Designer.cs">
+      <DependentUpon>CtrlSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlProductGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlProductGroup.Designer.cs">
+      <DependentUpon>CtrlProductGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlClientType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlClientType.Designer.cs">
+      <DependentUpon>CtrlClientType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlAdvertisingSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlAdvertisingSource.Designer.cs">
+      <DependentUpon>CtrlAdvertisingSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlUsers.Designer.cs">
+      <DependentUpon>CtrlUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlChargeGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlChargeGroup.Designer.cs">
+      <DependentUpon>CtrlChargeGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlServices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlServices.Designer.cs">
+      <DependentUpon>CtrlServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlVisit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlVisit.Designer.cs">
+      <DependentUpon>CtrlVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlWomanSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlWomanSingle.Designer.cs">
+      <DependentUpon>CtrlWomanSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlManSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlManSingle.Designer.cs">
+      <DependentUpon>CtrlManSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlManDouble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlManDouble.Designer.cs">
+      <DependentUpon>CtrlManDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlWomanDouble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlWomanDouble.Designer.cs">
+      <DependentUpon>CtrlWomanDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SalesInterface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\SalesInterface.designer.cs">
+      <DependentUpon>SalesInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CtrlCoachesVisits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CtrlCoachesVisits.Designer.cs">
+      <DependentUpon>CtrlCoachesVisits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmAbonements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmAbonements.Designer.cs">
+      <DependentUpon>FrmAbonements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmAdministrators.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmAdministrators.Designer.cs">
+      <DependentUpon>FrmAdministrators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAdministrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAdministrator.Designer.cs">
+      <DependentUpon>FrmEditAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditArrivalLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditArrivalLine.Designer.cs">
+      <DependentUpon>FrmEditArrivalLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmMovement.Designer.cs">
+      <DependentUpon>FrmMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmServiceSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmServiceSale.Designer.cs">
+      <DependentUpon>FrmServiceSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditCoach.Designer.cs">
+      <DependentUpon>FrmEditCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditArrival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditArrival.Designer.cs">
+      <DependentUpon>FrmEditArrival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditCharge.Designer.cs">
+      <DependentUpon>FrmEditCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditClient.Designer.cs">
+      <DependentUpon>FrmEditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditClientAbonement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditClientAbonement.Designer.cs">
+      <DependentUpon>FrmEditClientAbonement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditDocumentType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditDocumentType.Designer.cs">
+      <DependentUpon>FrmEditDocumentType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditBox.Designer.cs">
+      <DependentUpon>FrmEditBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAbonement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAbonement.Designer.cs">
+      <DependentUpon>FrmEditAbonement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditDimension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditDimension.Designer.cs">
+      <DependentUpon>FrmEditDimension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditGood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditGood.Designer.cs">
+      <DependentUpon>FrmEditGood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditPrice.Designer.cs">
+      <DependentUpon>FrmEditPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditSupplier.Designer.cs">
+      <DependentUpon>FrmEditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditProductGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditProductGroup.Designer.cs">
+      <DependentUpon>FrmEditProductGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditClientType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditClientType.Designer.cs">
+      <DependentUpon>FrmEditClientType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAdvertisingSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAdvertisingSource.Designer.cs">
+      <DependentUpon>FrmEditAdvertisingSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditUser.Designer.cs">
+      <DependentUpon>FrmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditChargeGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditChargeGroup.Designer.cs">
+      <DependentUpon>FrmEditChargeGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditService.Designer.cs">
+      <DependentUpon>FrmEditService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmSale.Designer.cs">
+      <DependentUpon>FrmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAbonementPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditAbonementPrice.Designer.cs">
+      <DependentUpon>FrmEditAbonementPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataForms\FrmEditServicePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForms\FrmEditServicePrice.Designer.cs">
+      <DependentUpon>FrmEditServicePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBLayer\AdvertisingSource.cs" />
+    <Compile Include="DBLayer\Coaches.cs" />
+    <Compile Include="DBLayer\CoachesAbonements.cs" />
+    <Compile Include="DBLayer\Boxes.cs" />
+    <Compile Include="DBLayer\AbonementIncome.cs" />
+    <Compile Include="DBLayer\Administrators.cs" />
+    <Compile Include="DBLayer\Arrivals.cs" />
+    <Compile Include="DBLayer\ArrivalDetails.cs" />
+    <Compile Include="DBLayer\DeletingLog.cs" />
+    <Compile Include="DBLayer\UserRate.cs" />
+    <Compile Include="DBLayer\UserAdministrator.cs" />
+    <Compile Include="DBLayer\UserVisits.cs" />
+    <Compile Include="DBLayer\ServiceSales.cs" />
+    <Compile Include="DBLayer\Sales.cs" />
+    <Compile Include="DBLayer\Visits.cs" />
+    <Compile Include="DBLayer\Dimensions.cs" />
+    <Compile Include="DBLayer\ClientTypes.cs" />
+    <Compile Include="DBLayer\ProductGroup.cs" />
+    <Compile Include="DBLayer\DocumentType.cs" />
+    <Compile Include="DBLayer\Suppliers.cs" />
+    <Compile Include="DBLayer\Abonements.cs" />
+    <Compile Include="DBLayer\ChargeGroup.cs" />
+    <Compile Include="DBLayer\Barcodes.cs" />
+    <Compile Include="DBLayer\Users.cs" />
+    <Compile Include="DBLayer\Clients.cs" />
+    <Compile Include="DBLayer\Charges.cs" />
+    <Compile Include="DBLayer\Products.cs" />
+    <Compile Include="DBLayer\Services.cs" />
+    <Compile Include="DBLayer\ClientsAbonements.cs" />
+    <Compile Include="DBLayer\ProductPriceDynamic.cs" />
+    <Compile Include="DBLayer\ServicePriceDynamic.cs" />
+    <Compile Include="DBLayer\AbonementPriceDynamic.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\ServiceFunctions.cs" />
+    <Compile Include="Lib\StringConstants.cs" />
+    <Compile Include="Lib\StringData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Components\CtrlAdditionalVisits.resx">
+      <DependentUpon>CtrlAdditionalVisits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlBirthdays.resx">
+      <DependentUpon>CtrlBirthdays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlChart.resx">
+      <DependentUpon>CtrlChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlIncomesOutcomes.resx">
+      <DependentUpon>CtrlIncomesOutcomes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlCoachesOnVisit.resx">
+      <DependentUpon>CtrlCoachesOnVisit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlRests.resx">
+      <DependentUpon>CtrlRests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlUserIncome.resx">
+      <DependentUpon>CtrlUserIncome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlAdministrators.resx">
+      <DependentUpon>CtrlAdministrators.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlDeclines.resx">
+      <DependentUpon>CtrlDeclines.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlGoodSale.resx">
+      <DependentUpon>CtrlGoodSale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlMoneyMovement.resx">
+      <DependentUpon>CtrlMoneyMovement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlServiceSale.resx">
+      <DependentUpon>CtrlServiceSale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlAbonementSale.resx">
+      <DependentUpon>CtrlAbonementSale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlUserVisits.resx">
+      <DependentUpon>CtrlUserVisits.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlVisits.resx">
+      <DependentUpon>CtrlVisits.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlExitInfo.resx">
+      <DependentUpon>CtrlExitInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlClientsOnline.resx">
+      <DependentUpon>CtrlClientsOnline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlCoaches.resx">
+      <DependentUpon>CtrlCoaches.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlArrivals.resx">
+      <DependentUpon>CtrlArrivals.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlBoxType.resx">
+      <DependentUpon>CtrlBoxType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlCharges.resx">
+      <DependentUpon>CtrlCharges.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlDocumentType.resx">
+      <DependentUpon>CtrlDocumentType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlAbonements.resx">
+      <DependentUpon>CtrlAbonements.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlBarcodes.resx">
+      <DependentUpon>CtrlBarcodes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlBoxes.resx">
+      <DependentUpon>CtrlBoxes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlClient.resx">
+      <DependentUpon>CtrlClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlDimension.resx">
+      <DependentUpon>CtrlDimension.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlGoods.resx">
+      <DependentUpon>CtrlGoods.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlInfo.resx">
+      <DependentUpon>CtrlInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlProductGroup.resx">
+      <DependentUpon>CtrlProductGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlClientType.resx">
+      <DependentUpon>CtrlClientType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlAdvertisingSource.resx">
+      <DependentUpon>CtrlAdvertisingSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlSales.resx">
+      <DependentUpon>CtrlSales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlSuppliers.resx">
+      <DependentUpon>CtrlSuppliers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlUsers.resx">
+      <DependentUpon>CtrlUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlChargeGroup.resx">
+      <DependentUpon>CtrlChargeGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlServices.resx">
+      <DependentUpon>CtrlServices.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlVisit.resx">
+      <DependentUpon>CtrlVisit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlWomanSingle.resx">
+      <DependentUpon>CtrlWomanSingle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlManSingle.resx">
+      <DependentUpon>CtrlManSingle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlManDouble.resx">
+      <DependentUpon>CtrlManDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlWomanDouble.resx">
+      <DependentUpon>CtrlWomanDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\SalesInterface.resx">
+      <DependentUpon>SalesInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CtrlCoachesVisits.resx">
+      <DependentUpon>CtrlCoachesVisits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmAbonements.resx">
+      <DependentUpon>FrmAbonements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmAdministrators.resx">
+      <DependentUpon>FrmAdministrators.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditAdministrator.resx">
+      <DependentUpon>FrmEditAdministrator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditArrivalLine.resx">
+      <DependentUpon>FrmEditArrivalLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmMovement.resx">
+      <DependentUpon>FrmMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmServiceSale.resx">
+      <DependentUpon>FrmServiceSale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditCoach.resx">
+      <DependentUpon>FrmEditCoach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditAdvertisingSource.resx">
+      <DependentUpon>FrmEditAdvertisingSource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditArrival.resx">
+      <DependentUpon>FrmEditArrival.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditCharge.resx">
+      <DependentUpon>FrmEditCharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditClient.resx">
+      <DependentUpon>FrmEditClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditClientAbonement.resx">
+      <DependentUpon>FrmEditClientAbonement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditDocumentType.resx">
+      <DependentUpon>FrmEditDocumentType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditBox.resx">
+      <DependentUpon>FrmEditBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditAbonement.resx">
+      <DependentUpon>FrmEditAbonement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditDimension.resx">
+      <DependentUpon>FrmEditDimension.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditGood.resx">
+      <DependentUpon>FrmEditGood.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditPrice.resx">
+      <DependentUpon>FrmEditPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditSupplier.resx">
+      <DependentUpon>FrmEditSupplier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditClientType.resx">
+      <DependentUpon>FrmEditClientType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditProductGroup.resx">
+      <DependentUpon>FrmEditProductGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditUser.resx">
+      <DependentUpon>FrmEditUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditChargeGroup.resx">
+      <DependentUpon>FrmEditChargeGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditService.resx">
+      <DependentUpon>FrmEditService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmSale.resx">
+      <DependentUpon>FrmSale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditAbonementPrice.resx">
+      <DependentUpon>FrmEditAbonementPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForms\FrmEditServicePrice.resx">
+      <DependentUpon>FrmEditServicePrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Client.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Client.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmCalendar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmDeleteReason.resx">
+      <DependentUpon>FrmDeleteReason.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmPrePaid.resx">
+      <DependentUpon>FrmPrePaid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmSelectAbonement.resx">
+      <DependentUpon>FrmSelectAbonement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmSelectDate.resx">
+      <DependentUpon>FrmSelectDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmViewClient.resx">
+      <DependentUpon>FrmViewClient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\FrmWindowsVisualization.resx">
+      <DependentUpon>FrmWindowsVisualization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\ViewReport.resx">
+      <DependentUpon>ViewReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\Client.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Client.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\FrmCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmDeleteReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmDeleteReason.Designer.cs">
+      <DependentUpon>FrmDeleteReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\FrmPrePaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmPrePaid.Designer.cs">
+      <DependentUpon>FrmPrePaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\FrmSelectAbonement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmSelectAbonement.Designer.cs">
+      <DependentUpon>FrmSelectAbonement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\FrmSelectDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmSelectDate.Designer.cs">
+      <DependentUpon>FrmSelectDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\FrmViewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmViewClient.Designer.cs">
+      <DependentUpon>FrmViewClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\FrmWindowsVisualization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\FrmWindowsVisualization.Designer.cs">
+      <DependentUpon>FrmWindowsVisualization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\ViewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\ViewReport.Designer.cs">
+      <DependentUpon>ViewReport.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fitness.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
