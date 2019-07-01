@@ -737,8 +737,8 @@ namespace FitnessProject.DataForms
                 }
                 this.Text = value.Desc.Name;*/
 
-                VideoCaptureDevice.Properties.Brightness.Value = VideoCaptureDevice.Properties.Brightness.Default;
-                VideoCaptureDevice.Properties.Contrast.Value = VideoCaptureDevice.Properties.Contrast.Default;
+                //VideoCaptureDevice.Properties.Brightness.Value = VideoCaptureDevice.Properties.Brightness.Default;
+                //VideoCaptureDevice.Properties.Contrast.Value = VideoCaptureDevice.Properties.Contrast.Default;
                 //ResetTrackbarsBasedOnProperties();
 
 

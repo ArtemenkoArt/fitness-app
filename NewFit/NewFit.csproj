@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A12FFB91-353E-46D8-87EC-A5F726570A34}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewFit</RootNamespace>
+    <AssemblyName>NewFit</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZFort.DB">
+      <HintPath>..\FitnessProject\bin\Debug\ZFort.DB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Fit.Data\AbonementPriceDynamicData.cs" />
+    <Compile Include="Fit.Repository\AbonementPriceDynamic.Repository\AbonementPriceDynamicRepository.cs" />
+    <Compile Include="Fit.Repository\AbonementPriceDynamic.Repository\IAbonementPriceDynamicRepository.cs" />
+    <Compile Include="Fit.Utils\DataRowObjectCreator.cs" />
+    <Compile Include="Fit.Data\AbonementIncomeDetailsData.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeDetails.Repository\AbonementIncomeDetailsRepository.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeDetails.Repository\IAbonementIncomeDetailsRepository.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeMoneyDetails.Repository\AbonementIncomeMoneyDetailsRepository.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeMoneyDetails.Repository\IAbonementIncomeMoneyDetailsRepository.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeMoney.Repository\AbonementIncomeMoneyRepository.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeMoney.Repository\IAbonementIncomeMoneyRepository.cs" />
+    <Compile Include="Fit.Data\AbonementIncomeUserData.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeUserData.Repository\AbonementIncomeUserDataRepository.cs" />
+    <Compile Include="Fit.Repository\AbonementIncomeUserData.Repository\IAbonementIncomeUserDataRepository.cs" />
+    <Compile Include="Fit.Models\AbonementIncome.cs" />
+    <Compile Include="Fit.Data\AbonementIncomeData.cs" />
+    <Compile Include="Fit.Data\AbonementIncomeMoneyData.cs" />
+    <Compile Include="Fit.Data\AbonementIncomeMoneyDetails.cs" />
+    <Compile Include="Fit.Repository\AbonementIncome.Repository\AbonementIncomeRepository.cs" />
+    <Compile Include="Fit.Utils\BaseMapper.cs" />
+    <Compile Include="Fit.Utils\DataRowParser.cs" />
+    <Compile Include="Fit.Repository\AbonementIncome.Repository\IAbonementIncomeRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessProject\FitnessProject.csproj">
+      <Project>{81a3b7a7-10ad-42f0-a53a-17fe6a38d09e}</Project>
+      <Name>FitnessProject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
